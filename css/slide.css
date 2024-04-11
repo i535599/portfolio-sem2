@@ -1,0 +1,40 @@
+body {
+    background-image: url(../images/back1.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif; /* Improved readability */
+}
+.title {
+    text-align: center;
+    color: lightblue;
+    margin-bottom: 20px;
+}
+.container {
+    width: 100%;
+}
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+.text, .image {
+    flex-basis: 50%;
+}
+.text {
+    padding: 20px;
+    color: rgb(0, 0, 0); /* Ensures text color consistency */
+    font-size: 1.5em;
+}
+.image.right {
+    text-align: right;
+}
+.image.left {
+    text-align: left;
+}
+.image img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,137 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+body{
+    background: white;
+    min-height: 100vh;
+    
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display:flex ;
+    justify-content:flex-start ;
+    align-items: center;
+    z-index: 1000; 
+}
+.logo{
+    font-size: 2em;
+    color: lightblue;
+    pointer-events: none;
+    margin-right: 270px;
+}
+.navigation a{
+    text-decoration: none;
+    color: lightblue;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+
+}
+
+.navigation a:hover,.navigation a.active{
+    background: lightblue;
+    color: white;
+}
+
+
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events:none ;
+}
+
+.sec h2{
+    font-size: 3em;
+    color: white;
+    margin-bottom: 10px;
+
+}
+.sec p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+}
+
+
+
+.outcome-box {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 100px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+.outcome-box p {
+    margin: 10px;
+    font-size: 1em;
+}
+
+.outcome-box:hover {
+    transform: scale(1.05); /* Scales box up slightly on hover */
+    color: #feffff;
+    background-color: #003329;
+}
+
+
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1; /* This ensures the parallax background is behind the content */
+}
+.sec {
+    position: relative;
+    background: #003329; /* Matches mountain/more solid background */
+    padding: 100px;
+    z-index: 2; /* Keeps this section above the default stacking context */
+    margin-bottom: 150px; /* Increased space below this section */
+}
+
+#learning-outcomes {
+    position: relative; /* Ensures z-index is applied correctly */
+    display: flex;
+    flex-wrap: wrap; /* Adjusts to wrap boxes if you decide against scrolling */
+    justify-content: center; /* Keeps items centered */
+    gap: 20px; /* Keeps space between boxes */
+    padding: 100px;
+    width: 100%; /* Full width */
+    margin-top: 50px; /* Added space at the top for clearer separation */
+    background: #003329; /* Matches the .sec background for seamless transition */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds depth */
+    z-index: 3; /* Ensures it's above the .sec section */
+}
+
+.learning-outcomes-title {
+    width: 100%; /* Ensures the title spans the full width of its container */
+    text-align: center; /* Centers the title text */
+    color: #ffffff; /* Adjusted for visibility */
+    font-size: 3em; /* Visibility and emphasis */
+    margin-bottom: 20px; /* Increased space between the title and boxes */
+}
