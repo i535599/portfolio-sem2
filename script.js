@@ -7,9 +7,9 @@ let moon = document.getElementById('moon');
 
 
 
-window.addEventListener('scroll', () => {
-    let value = window.scrollY;
-
+window.addEventListener('scroll', () => { /*object that triggers a function every time the user scrolls.*/
+    let value = window.scrollY;/*is calculated, which holds the current vertical scroll position (scrollY) of the window. This value increases as you scroll down the page.*/
+/* were the elements move*/
     text.style.marginTop = value * 1 + 'px'
     leaf.style.top = value * -1.5 + 'px'
     leaf.style.left = value * 1.5 + 'px'
