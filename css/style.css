@@ -7,6 +7,13 @@ font-family: sans-serif;
 body{
     background: white;
     min-height: 100vh;
+    background-image: url(../images/back1.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif; /* Improved readability */
+
     
 }
 header{
@@ -89,6 +96,9 @@ header{
     margin: 10px;
     font-size: 1em;
 }
+.outcome-box p a{
+    color: black;
+}
 
 .outcome-box:hover {
     transform: scale(1.05); /* Scales box up slightly on hover */
@@ -134,4 +144,40 @@ header{
     color: #ffffff; /* Adjusted for visibility */
     font-size: 3em; /* Visibility and emphasis */
     margin-bottom: 20px; /* Increased space between the title and boxes */
+}
+
+
+/* Learning outcome*/
+
+.title {
+    text-align: center;
+    color: lightblue;
+    margin-bottom: 20px;
+}
+.container {
+    width: 100%;
+}
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+.text, .image {
+    flex-basis: 50%;
+}
+.text {
+    padding: 20px;
+    color: rgb(0, 0, 0); /* Ensures text color consistency */
+    font-size: 1.5em;
+}
+.image.right {
+    text-align: right;
+}
+.image.left {
+    text-align: left;
+}
+.image img {
+    max-width: 100%;
+    height: auto;
 }
