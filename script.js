@@ -5,6 +5,8 @@ let hill4 = document.getElementById('hill4');
 let hill5 = document.getElementById('hill5');
 let moon = document.getElementById('moon');
 
+let hill2 = document.getElementById('hill2');
+
 
 
 window.addEventListener('scroll', () => { /*object that triggers a function every time the user scrolls.*/
@@ -17,7 +19,9 @@ window.addEventListener('scroll', () => { /*object that triggers a function ever
     hill4.style.left = value * -1.5 + 'px'
     hill1.style.top = value * 0.8 + 'px'
     moon.style.top = value * -1.5 + "px"
-    hill3.style.top = value * -1.5 + "px"
+   
+    hill2.style.left = value * -3.5 + 'px'
+
    
 }
 )
